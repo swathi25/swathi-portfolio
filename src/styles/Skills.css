@@ -7,7 +7,7 @@
 
 .skills-list {
   display: flex;
-  flex-wrap: wrap; /* 🔥 allows wrapping */
+  flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
   margin-top: 30px;

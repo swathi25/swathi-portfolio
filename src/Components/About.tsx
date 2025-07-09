@@ -4,7 +4,6 @@ import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 const About = () => {
   return (
     <section className="about-section">
-      {/* Sticky Vertical Social Bar */}
       <div className="social-sidebar">
         <a href="mailto:swathinilambur@gmail.com" target="_blank" title="Email">
           <FaEnvelope />
@@ -21,7 +20,6 @@ const About = () => {
         </a>
       </div>
 
-      {/* Main About Content */}
       <div className="about-content">
         <h2>About Me</h2>
 
