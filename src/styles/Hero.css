@@ -52,3 +52,26 @@ button.outline {
   color: #64ffda;
   border: 2px solid #64ffda;
 }
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .right {
+    text-align: center;
+  }
+
+  .right h1 {
+    font-size: 2rem;
+  }
+
+  .right h2 {
+    font-size: 1.25rem;
+  }
+
+  .buttons button {
+    margin-top: 10px;
+  }
+}

@@ -1,10 +1,19 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
 .about-section {
   position: relative;
   background-color: #0a192f;
   color: #ccd6f6;
-  padding: 0px 10px;
+  padding: 20px;
   display: flex;
   justify-content: center;
+  align-items: flex-start;
+  min-height: calc(100vh - 70px);
+  margin-top: 70px;
 }
 
 .about-content {
@@ -18,12 +27,12 @@
   text-align: center;
   color: #e6f1ff;
   margin-bottom: 30px;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .about-content p {
   line-height: 1.8;
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin-bottom: 20px;
   color: #a8b2d1;
 }
@@ -47,7 +56,7 @@
   margin-bottom: 10px;
 }
 
-/* Social icons on left side */
+/* Sidebar icons on large screens */
 .social-sidebar {
   position: fixed;
   top: 40%;
@@ -90,5 +99,42 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* ✅ Mobile adjustments */
+@media (max-width: 768px) {
+  .social-sidebar {
+    position: static;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+    animation: none;
+    opacity: 1;
+  }
+
+  .about-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    margin-top: 60px; /* smaller navbar height in mobile */
+    min-height: auto; /* let content decide height */
+  }
+
+  .about-content {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .about-content h2 {
+    font-size: 2rem;
+  }
+
+  .about-content p {
+    font-size: 1rem;
+  }
+
+  .edu-card {
+    padding: 16px;
   }
 }
